@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width: 250px ;
+    height : 250px;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    border: 3px solid white;
+}
+.lap{
+    height: 300px;
+    overflow: auto;
+    list-style: none;
+    color: #fff;
+}
+.minute{
+    font-size: 3rem;
+
+}
+.sec{
+    font-size: 2.8rem ;
+}
+.msec{
+    font-size: 2rem;
+}
+.buttonWrap{
+    width:250px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    color:#fff;
+    border: 2px solid whitesmoke;
+    background-color: black;
+}
+.button:hover{
+    background-color: #fff;
+    color: black;
+}
+.time{
+    color: #cccccc;
+}
+.timeStamp{
+    display: inline-block;
+    margin-left: 25px;
+}
+.lapItem{
+    display: inline-block;
+    width: 250;
+    padding: 15px;
+    background-color: rgb(3, 3, 66);
+    text-align: center;
+}
