@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stopwatch</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="stopwatch">
         <div class="clock">
             <div class="box1">
-                <span class="minute">00 :</span>
-                <span class="sec"> 00 : </span>
-                <span class="msec"> 00</span>
+                <span class="minute"></span>
+                <span class="sec"></span>
+                <span class="msec"></span>
                 
              </div>
              <div class="buttonWrap">
-               <button class="button">RESET</button>
-               <button class="button">PLAY</button>
-               <button class="button">LAP</button>
+               <button class="button reset hidden">RESET</button>
+               <button class="button play">PLAY</button>
+               <button class="button lap hidden">LAP</button>
             </div>
         </div>
-        <ul class="lap">
+        <ul class="laps">
             <li class="lapItem">
                 <span class="time">#1</span>
                 <span class="timeStamp"> 01 : 43 : 08 </span>
@@ -57,5 +58,6 @@
             <button class="clear_laps">CLEAR ALL</button>
         </ul>
     </div>
+    
 </body>
 </html>
