@@ -25,21 +25,15 @@ body{
     font-size: 30px;
     border: 3px solid white;
 }
-.lap{
-    height: 300px;
-    overflow: auto;
-    list-style: none;
-    color: #fff;
-}
 .minute{
     font-size: 3rem;
-
+    
 }
 .sec{
-    font-size: 2.8rem ;
+    font-size: 3rem ;
 }
 .msec{
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 .buttonWrap{
     width:250px;
@@ -66,10 +60,38 @@ body{
     display: inline-block;
     margin-left: 25px;
 }
+.lap{
+    height: 300px;
+    overflow: auto;
+    list-style: none;
+    position: relative;
+    width: 300px;
+   
+    color: #fff;
+}
+.lap::-webkit-scrollbar{
+    display: none;
+
+}
 .lapItem{
     display: inline-block;
-    width: 250;
+    width: 300px;
     padding: 15px;
     background-color: rgb(3, 3, 66);
     text-align: center;
+    margin-bottom: 15px;
+}
+.clear_laps{
+    position: fixed;
+    display: block;
+    z-index: 1000;
+    bottom:50px;
+    left:50%;
+    transform: translate(-50%);
+    width: 300px;
+    padding: 15px 0;
+    border-radius: 50px;
+    background-color: rgb(254, 251, 251,0.9);
+    border: 1px solid white;
+    color:black;
 }
